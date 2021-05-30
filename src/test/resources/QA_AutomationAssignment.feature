@@ -21,7 +21,7 @@ Feature: Title of your feature
   I want to use this template for my feature file
 
 
-  @tag1
+  @tag1 @QI
   Scenario Outline: Test case to find COVID19 centers with name TOA PAYOH APEX
     Given I want launch url "<url>"
     When I click on COVID19 Test Providers
@@ -32,7 +32,7 @@ Feature: Title of your feature
       |url|name|
       |https://www.onemap.gov.sg|TOA PAYOH|
       
-   @tag2
+   @tag2 @QI
   Scenario Outline: Test case to find nearby parks in PA Staff club
     Given I want launch url "<url>"
     When I click on Nearby parks
@@ -43,7 +43,7 @@ Feature: Title of your feature
       |url|name|
       |https://www.onemap.gov.sg|PA STAFF CLUB|
       
-      @tag3
+      @tag3 @QI
   Scenario Outline: Test case to find ATM and Bank Branches
     Given I want launch url "<url>"
     When I click on Essential Amenities
@@ -54,7 +54,7 @@ Feature: Title of your feature
       |url|
       |https://www.onemap.gov.sg|
       
-      @tag4
+      @tag4 @QI
   Scenario Outline: Test case to find Secondary School Information - negative test case
     Given I want launch url "<url>"
     When I click on School Query
@@ -66,7 +66,7 @@ Feature: Title of your feature
       |url|
       |https://www.onemap.gov.sg|
       
-      @tag5
+      @tag5 @QI
   Scenario Outline: Test case to download parks
     Given I want launch url "<url>"
     When I click on nearby parks
