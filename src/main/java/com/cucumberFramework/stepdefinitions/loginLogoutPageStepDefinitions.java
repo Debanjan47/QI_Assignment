@@ -24,6 +24,14 @@ public class loginLogoutPageStepDefinitions extends TestBase {
 		//waitHelper = new WaitHelper(driver);
 	}
 
+	@Given("^I want launch url \"([^\"]*)\"$")
+	public void I_want_launch_url(String url) throws Throwable {
+		driver.get(url);
+		//waitHelper = new WaitHelper(driver);
+	}
+	
+	
+	
 	@Then("^I click on sign in button and wait for sign in page$")
 	public void i_click_on_sign_in_button_and_wait_for_sign_in_page() throws Throwable {
 		loginPage.clickSignInButton();
